@@ -1,0 +1,747 @@
+{
+  "categories": [
+    "Препродакшн",
+    "Продакшн",
+    "Постпродакшн"
+  ],
+  "services": [
+    {
+      "category": "Препродакшн",
+      "name": "Написание сценарного плана",
+      "levels": {
+        "3": {
+          "cost": 8000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 35000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Препродакшн",
+      "name": "Раскадровка",
+      "levels": {
+        "3": {
+          "cost": 5000,
+          "default": false
+        },
+        "2": {
+          "cost": 10000,
+          "default": false
+        },
+        "1": {
+          "cost": 18000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Препродакшн",
+      "name": "Кастинг актеров",
+      "levels": {
+        "3": {
+          "cost": 10000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 35000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Препродакшн",
+      "name": "Аренда локации (по часам)",
+      "levels": {
+        "3": {
+          "cost": 2000,
+          "default": false
+        },
+        "2": {
+          "cost": 5000,
+          "default": false
+        },
+        "1": {
+          "cost": 10000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Препродакшн",
+      "name": "Ревизия объекта (предварительный выезд специалиста, тест оборудования)",
+      "levels": {
+        "3": {
+          "cost": 2000,
+          "default": false
+        },
+        "2": {
+          "cost": 5000,
+          "default": false
+        },
+        "1": {
+          "cost": 9000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа продюсера производства",
+      "levels": {
+        "3": {
+          "cost": 15000,
+          "default": false
+        },
+        "2": {
+          "cost": 30000,
+          "default": false
+        },
+        "1": {
+          "cost": 50000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа художника-постановщика",
+      "levels": {
+        "3": {
+          "cost": 15000,
+          "default": false
+        },
+        "2": {
+          "cost": 25000,
+          "default": false
+        },
+        "1": {
+          "cost": 50000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа оператора",
+      "levels": {
+        "3": {
+          "cost": 15000,
+          "default": false
+        },
+        "2": {
+          "cost": 25000,
+          "default": true
+        },
+        "1": {
+          "cost": 50000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа оператора-постановщика",
+      "levels": {
+        "3": {
+          "cost": 20000,
+          "default": false
+        },
+        "2": {
+          "cost": 35000,
+          "default": false
+        },
+        "1": {
+          "cost": 50000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа осветителя",
+      "levels": {
+        "3": {
+          "cost": 10000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 25000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа режиссера",
+      "levels": {
+        "3": {
+          "cost": 7000,
+          "default": false
+        },
+        "2": {
+          "cost": 25000,
+          "default": false
+        },
+        "1": {
+          "cost": 50000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа технического ассистента",
+      "levels": {
+        "3": {
+          "cost": 7000,
+          "default": false
+        },
+        "2": {
+          "cost": 10000,
+          "default": false
+        },
+        "1": {
+          "cost": 15000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа гримёра",
+      "levels": {
+        "3": {
+          "cost": 5000,
+          "default": false
+        },
+        "2": {
+          "cost": 10000,
+          "default": false
+        },
+        "1": {
+          "cost": 20000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа стилиста-костюмера",
+      "levels": {
+        "3": {
+          "cost": 5000,
+          "default": false
+        },
+        "2": {
+          "cost": 10000,
+          "default": false
+        },
+        "1": {
+          "cost": 20000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа звукорежиссера",
+      "levels": {
+        "3": {
+          "cost": 10000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 30000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа фотографа",
+      "levels": {
+        "3": {
+          "cost": 10000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 40000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа ассистента",
+      "levels": {
+        "3": {
+          "cost": 10000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 25000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа режиссера трансляции",
+      "levels": {
+        "3": {
+          "cost": 10000,
+          "default": false
+        },
+        "2": {
+          "cost": 20000,
+          "default": false
+        },
+        "1": {
+          "cost": 35000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа менеджера проекта",
+      "levels": {
+        "3": {
+          "cost": 15000,
+          "default": false
+        },
+        "2": {
+          "cost": 30000,
+          "default": true
+        },
+        "1": {
+          "cost": 50000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Настройка плеера трансляции",
+      "levels": {
+        "3": {
+          "cost": 2000,
+          "default": false
+        },
+        "2": {
+          "cost": 7000,
+          "default": false
+        },
+        "1": {
+          "cost": 15000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Создание и настройка платформы для трансляции",
+      "levels": {
+        "3": {
+          "cost": 20000,
+          "default": false
+        },
+        "2": {
+          "cost": 40000,
+          "default": false
+        },
+        "1": {
+          "cost": 75000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Настройка трансляции на внешнюю площадку",
+      "levels": {
+        "3": {
+          "cost": 2000,
+          "default": false
+        },
+        "2": {
+          "cost": 7000,
+          "default": false
+        },
+        "1": {
+          "cost": 15000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Настройка интернета на объекте",
+      "levels": {
+        "3": {
+          "cost": 10000,
+          "default": false
+        },
+        "2": {
+          "cost": 20000,
+          "default": false
+        },
+        "1": {
+          "cost": 35000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Работа актёров",
+      "levels": {
+        "3": {
+          "cost": 10000,
+          "default": false
+        },
+        "2": {
+          "cost": 35000,
+          "default": true
+        },
+        "1": {
+          "cost": 50000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Камеры высокого разрешения+оптика, штативы, коммутация и питание",
+      "levels": {
+        "3": {
+          "cost": 7000,
+          "default": false
+        },
+        "2": {
+          "cost": 20000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Камеры (художественная киносъёмка)+оптика, штативы, коммутация и питание",
+      "levels": {
+        "1": {
+          "cost": 50000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Системы стабилизации",
+      "levels": {
+        "3": {
+          "cost": 7000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 25000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Комплект осветительного оборудования",
+      "levels": {
+        "3": {
+          "cost": 7000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 70000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Микрофон - петличка",
+      "levels": {
+        "3": {
+          "cost": 2000,
+          "default": false
+        },
+        "2": {
+          "cost": 5000,
+          "default": false
+        },
+        "1": {
+          "cost": 7000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Оборудование для звукозаписи",
+      "levels": {
+        "3": {
+          "cost": 5000,
+          "default": false
+        },
+        "2": {
+          "cost": 10000,
+          "default": false
+        },
+        "1": {
+          "cost": 40000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Продакшн",
+      "name": "Административные расходы, буфет, транспорт",
+      "levels": {
+        "3": {
+          "cost": 5000,
+          "default": false
+        },
+        "2": {
+          "cost": 10000,
+          "default": false
+        },
+        "1": {
+          "cost": 50000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "Графическое оформление ролика (титры, заставки, изображения)",
+      "levels": {
+        "3": {
+          "cost": 5000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 30000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "Монтаж видеоматериала, цветокоррекция",
+      "levels": {
+        "3": {
+          "cost": 8000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": false
+        },
+        "1": {
+          "cost": 40000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "2d-анимация(за 1 минуту материала)",
+      "levels": {
+        "3": {
+          "cost": 8000,
+          "default": false
+        },
+        "2": {
+          "cost": 20000,
+          "default": false
+        },
+        "1": {
+          "cost": 50000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "3d-анимация(за 1 минуту материала)",
+      "levels": {
+        "3": {
+          "cost": 15000,
+          "default": false
+        },
+        "2": {
+          "cost": 35000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "3d-анимация",
+      "levels": {
+        "1": {
+          "cost": 60000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "Саунд-дизайн и музыка",
+      "levels": {
+        "3": {
+          "cost": 5000,
+          "default": false
+        },
+        "2": {
+          "cost": 15000,
+          "default": true
+        },
+        "1": {
+          "cost": 20000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "Дикторская озвучка",
+      "levels": {
+        "3": {
+          "cost": 5000,
+          "default": false
+        },
+        "2": {
+          "cost": 10000,
+          "default": true
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "Дикторская озвучка HQ",
+      "levels": {
+        "1": {
+          "cost": 30000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "Работа продюсера производства для анимационных роликов ",
+      "levels": {
+        "3": {
+          "cost": 15000,
+          "default": false
+        },
+        "2": {
+          "cost": 30000,
+          "default": false
+        },
+        "1": {
+          "cost": 50000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "Раскадровка анимации",
+      "levels": {
+        "3": {
+          "cost": 5000,
+          "default": false
+        },
+        "2": {
+          "cost": 10000,
+          "default": false
+        },
+        "1": {
+          "cost": 20000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "Работа иллюстратора",
+      "levels": {
+        "3": {
+          "cost": 8000,
+          "default": false
+        },
+        "2": {
+          "cost": 20000,
+          "default": false
+        },
+        "1": {
+          "cost": 45000,
+          "default": false
+        }
+      }
+    },
+    {
+      "category": "Постпродакшн",
+      "name": "Инфографика (за 1 минуту материала)",
+      "levels": {
+        "3": {
+          "cost": 15000,
+          "default": false
+        },
+        "2": {
+          "cost": 30000,
+          "default": false
+        },
+        "1": {
+          "cost": 60000,
+          "default": false
+        }
+      }
+    }
+  ]
+}
