@@ -10,11 +10,16 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 def extract_json(text: str) -> dict | None:
-    """Извлекает JSON из ответа модели"""
+    """Извлекает JSON из ответа модели, удаляя комментарии"""
     json_match = re.search(r'\{[\s\S]*\}', text)
     if json_match:
+        json_str = json_match.group()
+        # Удаляем однострочные комментарии // ...
+        json_str = re.sub(r'//[^\n]*', '', json_str)
+        # Удаляем запятые перед закрывающими скобками (trailing commas)
+        json_str = re.sub(r',(\s*[}\]])', r'\1', json_str)
         try:
-            return json.loads(json_match.group())
+            return json.loads(json_str)
         except json.JSONDecodeError:
             return None
     return None
