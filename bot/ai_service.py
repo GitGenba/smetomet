@@ -70,6 +70,12 @@ def analyze_project(conversation_history: list[dict]) -> dict:
     messages = [{"role": "system", "content": full_system_prompt}]
     messages.extend(conversation_history)
     
+    # Логируем историю разговора (без system prompt)
+    logger.info(f"Conversation history ({len(conversation_history)} messages):")
+    for msg in conversation_history:
+        content_preview = msg['content'][:100] + "..." if len(msg['content']) > 100 else msg['content']
+        logger.info(f"  [{msg['role']}]: {content_preview}")
+    
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=messages,
