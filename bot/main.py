@@ -2,6 +2,8 @@ import logging
 import os
 import json
 import tempfile
+from pathlib import Path
+from collections import OrderedDict
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     Application,
@@ -26,8 +28,43 @@ logger = logging.getLogger(__name__)
 # OpenAI клиент для Whisper
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
 
-# Хранилище смет по ID (для возможности вернуться к любой смете)
-estimates_storage = {}
+# Файл для хранения смет
+ESTIMATES_FILE = Path(__file__).parent / "estimates_cache.json"
+MAX_ESTIMATES = 5
+
+
+def load_estimates() -> OrderedDict:
+    """Загружает сметы из файла"""
+    if ESTIMATES_FILE.exists():
+        try:
+            with open(ESTIMATES_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return OrderedDict(data)
+        except (json.JSONDecodeError, Exception) as e:
+            logger.error(f"Error loading estimates: {e}")
+    return OrderedDict()
+
+
+def save_estimates():
+    """Сохраняет сметы в файл"""
+    try:
+        with open(ESTIMATES_FILE, "w", encoding="utf-8") as f:
+            json.dump(dict(estimates_storage), f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.error(f"Error saving estimates: {e}")
+
+
+def add_estimate(estimate_id: str, estimate: dict):
+    """Добавляет смету и сохраняет (максимум 5 последних)"""
+    estimates_storage[estimate_id] = estimate
+    # Оставляем только последние MAX_ESTIMATES
+    while len(estimates_storage) > MAX_ESTIMATES:
+        estimates_storage.popitem(last=False)
+    save_estimates()
+
+
+# Хранилище смет по ID (загружаем при старте)
+estimates_storage: OrderedDict = load_estimates()
 
 
 def generate_estimate_id():
@@ -259,10 +296,10 @@ async def process_user_message(update: Update, context: ContextTypes.DEFAULT_TYP
             
             if edit_mode and current_estimate_id:
                 estimate_id = current_estimate_id
-                estimates_storage[estimate_id] = estimate
+                add_estimate(estimate_id, estimate)
             else:
                 estimate_id = generate_estimate_id()
-                estimates_storage[estimate_id] = estimate
+                add_estimate(estimate_id, estimate)
             
             context.user_data['current_estimate_id'] = estimate_id
             context.user_data['edit_mode'] = False

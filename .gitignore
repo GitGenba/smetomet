@@ -26,3 +26,6 @@ env/
 # Temp files
 *.tmp
 *.xlsx
+
+# Estimates cache
+estimates_cache.json
