@@ -30,7 +30,7 @@ openai_client = OpenAI(api_key=OPENAI_API_KEY)
 
 # Файл для хранения смет
 ESTIMATES_FILE = Path(__file__).parent / "estimates_cache.json"
-MAX_ESTIMATES = 5
+MAX_ESTIMATES = 50
 
 
 def load_estimates() -> OrderedDict:
